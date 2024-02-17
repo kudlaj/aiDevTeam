@@ -2,8 +2,6 @@ from crewai import Agent, Task, Crew, Process
 import os
 from textwrap import dedent
 
-os.environ["OPENAI_API_KEY"] = "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"
-
 disk_writer = Agent(
   role='Disk Writer',
   goal='Write generated code to a file',
